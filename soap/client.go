@@ -135,8 +135,8 @@ func doRoundTrip(c *Client, setHeaders func(*http.Request), in, out Message) err
 		c.Pre(r)
 	}
 
-	if c.ctx != nil {
-		r.WithContext(c.ctx)
+	if c.Ctx != nil {
+		r.WithContext(c.Ctx)
 	}
 
 	resp, err := cli.Do(r)
