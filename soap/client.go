@@ -57,7 +57,7 @@ type Client struct {
 	Config                 *http.Client         // Optional HTTP client
 	Pre                    func(*http.Request)  // Optional hook to modify outbound requests
 	Post                   func(*http.Response) // Optional hook to snoop inbound responses
-	ctx                    context.Context
+	Ctx                    context.Context
 }
 
 // XMLTyper is an abstract interface for types that can set an XML type.
